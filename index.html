@@ -3,50 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <script src="rps.js" defer></script>
   </head>
-  <body>
-    <script>
-      let choices = ["rock", "paper", "scissors"];
-
-      function getComputerChoice() {
-        return choices[Math.floor(Math.random() * choices.length)];
-      }
-
-      function playRound(playerChoice, computerChoice) {
-        let playerChoiceLower = playerChoice.toLowerCase();
-        let computerChoiceLower = computerChoice.toLowerCase();
-
-        if (playerChoice == computerChoice) {
-          return "It is a draw!";
-        }
-
-        if (playerChoice == "rock" && computerChoice == "scissors") {
-          return "You win! Rock beats scissors";
-        } else {
-          return "You lose! Paper beats rock";
-        }
-
-        if (playerChoice == "paper" && computerChoice == "rock") {
-          return "You win! Paper beats rock";
-        } else {
-          return "You lose! Scissors beats paper";
-        }
-
-        if (playerChoice == "scissors" && computerChoice == "paper") {
-          return "You win! Scissors beats paper";
-        } else {
-          return "You lose! Rock beats scissors";
-        }
-      }
-
-      function playGame() {
-        for (let i = 0; i < 5; i++) {
-          let playerChoice = prompt("Choose rock, paper, or scissors.");
-
-          console.log(playRound(playerChoice, getComputerChoice()));
-        }
-      }
-    </script>
-  </body>
+  <body></body>
 </html>
